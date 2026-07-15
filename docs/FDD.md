@@ -203,7 +203,7 @@ Cadastra um endpoint; a **secret é gerada por nós e devolvida na criação** [
   "url": "https://hooks.atlascomercial.com/oms/orders",
   "eventTypes": ["SHIPPED", "DELIVERED"],
   "active": true,
-  "secret": "whsec_2b7e151628aed2a6abf7158809cf4f3c762e7160f38b4da5",
+  "secret": "whsec_<GERADA_NO_SERVIDOR__exibida_apenas_nesta_resposta>",
   "createdAt": "2026-07-15T13:04:22.581Z"
 }
 ```
@@ -260,7 +260,7 @@ Gera nova secret; a **antiga fica válida por 24h em paralelo** (grace period) e
 ```json
 {
   "id": "9c5b94b1-35ad-49bb-b118-8e8fc24abf80",
-  "secret": "whsec_8f14e45fceea167a5a36dedd4bea2543c8b9f2d1a7e0c5b3",
+  "secret": "whsec_<NOVA_SECRET_GERADA__antiga_expira_em_24h>",
   "previousSecretExpiresAt": "2026-07-16T14:20:00.000Z"
 }
 ```
